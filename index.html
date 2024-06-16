@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Operation</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/ne.js"></script>
+</head>
+
+<body onload="showTime()">
+
+  <button id="add">Add</button>
+  <button id="sub">Subtract</button>
+  <button id="mul">Multiply</button>
+  <button id="div">Divide</button>
+  <button id="mod">modulo</button>
+  <button id="pow">power</button><br>
+  <input type="number" id="number1" required>
+  <input type="number" id="number2" required><br><br>
+  <input type="text" id="result" required><br><br>
+  <button id="incr">increment</button>
+  <button id="decr">reset</button><br><br>
+  <input type="text" id="number" required>
+  <p id="demo"></p>
+  <!-- <button type="button" onclick="displaydate()">show</button> -->
+  <!-- <p id="showdate"></p> -->
+
+  <div id="selected-timezone-time"></div>
+
+
+  <select id="timezone-selector" onchange="displayTime()">
+    <option value="America/New_York">New York (Eastern Time)</option>
+    <option value="Asia/Kolkata">kolkata (india Time)</option>
+    <option value="America/Chicago">Chicago (Central Time)</option>
+    <option value="America/Denver">Denver (Mountain Time)</option>
+    <option value="America/Los_Angeles">Los Angeles (Pacific Time)</option>
+    <option value="Asia/Kathmandu">Kathmandu (Nepal Time)</option>
+
+  </select>
+  <div id="nepali-time"></div>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+
+      <button id="close">&times;</button>
+      <h2>Well Done!</h2>
+      <img src="emoji.jpg">
+    </div>
+  </div>
+
+  
+
+  <script src="script.js"></script>
+</body>
+
+</html>
